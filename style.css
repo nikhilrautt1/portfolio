@@ -132,3 +132,234 @@ footer {
         text-align: center;
     }
 }
+/* =================================
+   RESPONSIVE PORTFOLIO DESIGN
+   Nikhil Santosh Raut
+================================= */
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header */
+header {
+    width: 100%;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: clamp(26px, 5vw, 42px);
+    margin: 15px 0;
+}
+
+header p {
+    font-size: clamp(14px, 2vw, 19px);
+}
+
+/* Profile Image */
+.img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.nav a {
+    text-decoration: none;
+    padding: 8px 14px;
+    white-space: nowrap;
+}
+
+/* Main Sections */
+section {
+    width: min(90%, 1000px);
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+section h2 {
+    font-size: clamp(21px, 3vw, 28px);
+    margin-bottom: 15px;
+}
+
+section p,
+section li {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+section ul {
+    padding-left: 25px;
+}
+
+/* Project Links */
+.btn-link {
+    display: inline-block;
+    text-decoration: none;
+    margin: 5px;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+/* =================================
+   TABLET RESPONSIVENESS
+================================= */
+
+@media screen and (max-width: 768px) {
+
+    header {
+        padding: 30px 15px;
+    }
+
+    .img {
+        width: 135px;
+        height: 135px;
+    }
+
+    .nav {
+        gap: 10px;
+    }
+
+    .nav a {
+        font-size: 14px;
+        padding: 7px 10px;
+    }
+
+    section {
+        width: 92%;
+        padding: 20px;
+        margin: 22px auto;
+    }
+
+    section p,
+    section li {
+        font-size: 15px;
+    }
+}
+
+/* =================================
+   MOBILE RESPONSIVENESS
+================================= */
+
+@media screen and (max-width: 480px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 25px 12px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    .img {
+        width: 115px;
+        height: 115px;
+    }
+
+    .nav {
+        flex-direction: row;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .nav a {
+        font-size: 12px;
+        padding: 7px 9px;
+    }
+
+    section {
+        width: 94%;
+        padding: 17px;
+        margin: 18px auto;
+        border-radius: 10px;
+    }
+
+    section h2 {
+        font-size: 21px;
+    }
+
+    section p,
+    section li {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    section ul {
+        padding-left: 20px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 15px 10px;
+    }
+}
+
+/* =================================
+   SMALL MOBILE SCREENS
+================================= */
+
+@media screen and (max-width: 350px) {
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    .nav {
+        gap: 5px;
+    }
+
+    .nav a {
+        font-size: 11px;
+        padding: 6px;
+    }
+
+    section {
+        padding: 14px;
+    }
+}
